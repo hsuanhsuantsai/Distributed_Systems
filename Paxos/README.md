@@ -16,16 +16,16 @@ In such system, a new value EUR/USD is introduced by one of the exchanges.
 * How to run: java Exchange < member number > < number of exchanges in the system >
 
 ## Running example
-In hw5, we have 7 processes, so member number is from 1 to 7.
+In hw5, we have 7 processes, so member number is from 1 to 7.  
 number of exchange is 7
 
-A1: java Exchange 1 7
-A2: java Exchange 2 7
-B1: java Exchange 3 7
-B2: java Exchange 4 7
-B3: java Exchange 5 7
-C1: java Exchange 6 7
-C2: java Exchange 7 7
+A1: java Exchange 1 7  
+A2: java Exchange 2 7  
+B1: java Exchange 3 7  
+B2: java Exchange 4 7  
+B3: java Exchange 5 7  
+C1: java Exchange 6 7  
+C2: java Exchange 7 7  
 
 Output shows agree/reject in prepare phase and if a proposal is committed, print out the current value.
 
