@@ -1,0 +1,41 @@
+graph {
+	rank=LR
+	subgraph cluster_A {
+		label="Domain A";
+		A;
+		A1;
+		A2;
+
+		A1 -- A;
+		A2 -- A;
+	}
+
+	subgraph cluster_B {
+		label="Domain B";
+		B;
+		B1;
+		B2;
+		B3;
+
+		B1 -- B;
+		B2 -- B;
+		B3 -- B;
+	}
+
+	subgraph cluster_C {
+		label="Domain C";
+		C;
+		C1;
+		C2;
+
+		C1 -- C;
+		C2 -- C;
+	}
+
+	
+	C -- B;
+	B -- A;
+	C -- A;
+	
+
+}
