@@ -33,12 +33,12 @@ ref: https://www.scss.tcd.ie/Jeremy.Jones/vivio/caches/MESIHelp.htm
 ## Running example (from MESI protocol at wikipedia):
 	use EUR/USD as currency
 	Request order: R1->W1->R3->W3->R1->R3->R2
-		Command 		Expected output (E1-E2-E3)
-	default				I-I-I
+	Command 		Expected output (E1-E2-E3)
+	default			I-I-I
 	R1: 1,R,0,-1		E-I-I
 	W1: 1,W,0,1.09		M-I-I
 	R3: 3,R,0,-1		S-I-S
-	W3: 3,W,0,2			I-I-M
+	W3: 3,W,0,2		I-I-M
 	R1: 1,R,0,-1		S-I-S
 	R3: 3,R,0,-1		S-I-S
 	R2: 2,R,0,-1		S-S-S
