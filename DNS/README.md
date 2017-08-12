@@ -2,24 +2,25 @@
 Please see DNS.png  
 A, B, and C are connected by a circular ring.  
 Rules:  
-	* A can communicate with B and C and vice versa.
-	* A* can only communicate with A.
-	* B* can only communicate with B.
-	* C* can only communicate with C.
+* A can communicate with B and C and vice versa.
+* A* can only communicate with A.
+* B* can only communicate with B.
+* C* can only communicate with C.
 
 ## Assumptions 
 1. A, A1 and A2 work in the same machine; B, B1, B2 and B3 work in the same machine; C, C1 and C2 work in the same machine.
 2. To simplify the question, set A, B and C in the same machine. (Thus, set hostName = localhost.)
 ## Usage
-* How to compile: javac SuperNode.java  
-						 javac SubNode.java
+* How to compile:  
+	* javac SuperNode.java  
+	* javac SubNode.java
 
 * How to run:  
-   1. java SuperNode < superServerPort > < subServerPort > < label >  
+	* java SuperNode < superServerPort > < subServerPort > < label >  
 			superServerPort: server side port number for the other supernodes  
 			subServerPort: server side port number for its subnodes  
 			label: enter A, B, or C
-	2. java SubNode < member number > < super port number > < self port number >  
+	* java SubNode < member number > < super port number > < self port number >  
 			member number: if A1, enter 1; if B2, enter 2  
 			super port number: port number of its supernode  
 			self port number: server side port number for other nodes to connect to this agent
